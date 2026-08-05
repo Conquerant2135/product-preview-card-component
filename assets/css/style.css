@@ -1,0 +1,107 @@
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 610px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  border-radius: 12px;
+  align-items: stretch;
+  height: max-content;
+  overflow: hidden;
+}
+
+.card-category {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.card-title {
+    font-family: 'Fraunces';
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto 30px;
+  gap: 25px;
+}
+
+.card-img {
+  width: 310px;
+  height: max-content;
+}
+
+.card-desc {
+    color: var(--grey);
+    line-height: 1.65;
+}
+
+.card-price {
+    font-family: 'Fraunces';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.principal-price {
+    color: var(--green-500);
+    font-size:xx-large;
+}
+
+.second-price {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.card-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: var(--green-500);
+  border-radius: 10px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card-cta:hover {
+    transition: 0.5s ease;
+    background-color: var(--green-700);
+}
+
+@media (max-width: 412px) {
+  .card {
+    width: 315px;
+    padding-top: 14px;
+    padding-bottom: 28px;
+  }
+
+}
