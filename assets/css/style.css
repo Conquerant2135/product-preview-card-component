@@ -22,7 +22,7 @@ footer {
 
 .card {
   width: 98%;
-  max-width: 600px;
+  max-width: 550px;
   display: flex;
   flex-direction: row;
   background-color: var(--white);
@@ -42,12 +42,12 @@ footer {
   font-family: "Fraunces";
   line-height: 1;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 .card-content {
   width: 100%;
-  margin: 30px auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
 }
