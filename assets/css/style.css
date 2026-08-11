@@ -42,12 +42,12 @@ footer {
   font-family: "Fraunces";
   line-height: 1;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .card-content {
   width: 100%;
-  margin: 20px auto;
+  margin: 25px auto;
   display: flex;
   align-items: center;
 }
