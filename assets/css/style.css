@@ -1,8 +1,13 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 18px;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
 }
-
 
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -16,29 +21,33 @@
 }
 
 .card {
-  width: 610px;
+  width: 98%;
+  max-width: 700px;
   display: flex;
   flex-direction: row;
   background-color: var(--white);
   border-radius: 12px;
   align-items: stretch;
-  height: max-content;
   overflow: hidden;
 }
 
 .card-category {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  color: var(--grey);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .card-title {
-    font-family: 'Fraunces';
-    line-height: 1;
-    font-size: 2.5rem;
+  font-family: "Fraunces";
+  line-height: 1;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .card-content {
+  width: 100%;
+  margin: 30px auto;
   display: flex;
   align-items: center;
 }
@@ -46,36 +55,44 @@
 .card-content-wrapper {
   display: flex;
   flex-direction: column;
-  margin: auto 30px;
+  margin: 0 25px;
   gap: 25px;
 }
 
 .card-img {
-  width: 310px;
-  height: max-content;
+  width: 100%;
+}
+
+.card-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-desc {
-    color: var(--grey);
-    line-height: 1.65;
+  color: var(--grey);
+  line-height: 1.65;
+  font-weight: 500;
 }
 
 .card-price {
-    font-family: 'Fraunces';
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
+  font-family: "Fraunces";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
 }
 
 .principal-price {
-    color: var(--green-500);
-    font-size:xx-large;
+  color: var(--green-500);
+  font-weight: 700;
+  font-size: xx-large;
 }
 
 .second-price {
-    text-decoration: line-through;
-    color: var(--grey);
+  text-decoration: line-through;
+  color: var(--grey);
 }
 
 .card-cta {
@@ -93,15 +110,16 @@ a {
 }
 
 .card-cta:hover {
-    transition: 0.5s ease;
-    background-color: var(--green-700);
+  transition: 0.5s ease;
+  background-color: var(--green-700);
 }
 
 @media (max-width: 412px) {
   .card {
-    width: 315px;
-    padding-top: 14px;
-    padding-bottom: 28px;
+    flex-direction: column;
   }
 
+  /* body {
+    font-size: 12px;
+  } */
 }

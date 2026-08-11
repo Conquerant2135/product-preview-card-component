@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: clamp(12px , 0.8rem , 16px);
   background-color: var(--cream);
 }
 
