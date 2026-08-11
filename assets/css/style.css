@@ -22,7 +22,7 @@ footer {
 
 .card {
   width: 98%;
-  max-width: 550px;
+  max-width: 600px;
   display: flex;
   flex-direction: row;
   background-color: var(--white);
@@ -100,6 +100,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3rem;
+  gap: 7px;
+  font-weight: 700;
   background-color: var(--green-500);
   border-radius: 10px;
 }
@@ -110,7 +112,7 @@ a {
 }
 
 .card-cta:hover {
-  transition: 0.5s ease;
+  transition: 0.25s ease;
   background-color: var(--green-700);
 }
 
@@ -118,8 +120,4 @@ a {
   .card {
     flex-direction: column;
   }
-
-  /* body {
-    font-size: 12px;
-  } */
 }
